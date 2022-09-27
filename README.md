@@ -20,12 +20,12 @@ A simple video file of cars on a road was used.
 
 ## Computer stats and versions
 
-Processor AMD Ryzen 5 3400g
-Graphics card NVIDIA GeForce GTX 1050
-Ubuntu 18.04
-GCC version 5.5.0
-Nvidia driver version 515.65.01
-CUDA version 9.0
+- Processor AMD Ryzen 5 3400g
+- Graphics card NVIDIA GeForce GTX 1050
+- Ubuntu 18.04
+- GCC version 5.5.0
+- Nvidia driver version 515.65.01
+- CUDA version 9.0
 
 ## Installation and environment setup
 
@@ -34,23 +34,29 @@ Download this repository.
 Install Anaconda in machine.
 
 Create environment, suggested name 'RTVAD':
+    
     conda create --name RTVAD python=3.6
 
 Activate environment:
+    
     conda activate RTVAD
 
 Install Pytorch:
+    
     conda install pytorch==1.0.0 torchvision==0.2.1 cuda80 -c pytorch
 
 Go to directory 'RTVAD' and install requirements and setup:
+    
     pip install -r requirements.txt
 
     pip install -e .
 
 Go to directory 'RTVAD/src/lib/models/networks/DCNv2' and compile deformable convolutional network:
+    
     ./make.sh
 
 Go to directory 'RTVAD/src/lib/utils/iou3d' and compile iou3d:
+    
     python setup.py install
 
 ## Before running code
@@ -64,6 +70,7 @@ To choose the type of tracker, just assign the tracker name to the 'tracker' var
 ## Running the code
 
 Go to 'RTVAD' folder (make sure the correct environment is active):
+     
      python ./src/faster.py --demo ./demo_kitti_format/data/kitti/image --calib_dir ./data/calib/ --load_model ./data/weights/model_res18_2.pth --gpus 0 --arch res_18
 
 ## Final considerations

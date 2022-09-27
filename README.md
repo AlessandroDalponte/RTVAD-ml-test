@@ -53,7 +53,7 @@ Go to directory 'RTVAD-ml-test' and install requirements and setup:
 
 Go to directory 'RTVAD-ml-test/src/lib/models/networks/DCNv2' and compile deformable convolutional network:
     
-    ./make.sh
+    bash make.sh
 
 Go to directory 'RTVAD-ml-test/src/lib/utils/iou3d' and compile iou3d:
     

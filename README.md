@@ -45,27 +45,27 @@ Install Pytorch:
     
     conda install pytorch==1.0.0 torchvision==0.2.1 cuda80 -c pytorch
 
-Go to directory 'RTVAD' and install requirements and setup:
+Go to directory 'RTVAD-ml-test' and install requirements and setup:
     
     pip install -r requirements.txt
 
     pip install -e .
 
-Go to directory 'RTVAD/src/lib/models/networks/DCNv2' and compile deformable convolutional network:
+Go to directory 'RTVAD-ml-test/src/lib/models/networks/DCNv2' and compile deformable convolutional network:
     
     ./make.sh
 
-Go to directory 'RTVAD/src/lib/utils/iou3d' and compile iou3d:
+Go to directory 'RTVAD-ml-test/src/lib/utils/iou3d' and compile iou3d:
     
     python setup.py install
 
 ## Before running code
 
-The video file is read from the path 'RTVAD/data/video/video.mp4'. In case you want to change the video file, go to the mentioned directory and name the new video as 'video.mp4'. You can also change the code in 'RTVAD/src/faster.py' to read the desired file as you wish.
+The video file is read from the path 'RTVAD-ml-test/data/video/video.mp4'. In case you want to change the video file, go to the mentioned directory and name the new video as 'video.mp4'. You can also change the code in 'RTVAD-ml-test/src/faster.py' to read the desired file as you wish.
 
-In the 'RTVAD/data' directory, there are other subdirectories. In 'weights', the 'model_res18_2.pth' pre-trained weights file is located; in 'calib', the 'calib.txt' video camera calibration file is located; and in 'final_frames', 'final_video' and 'results_for_bev', the output video, output frames and output files for generating a Bird's Eye view (without tracks), can be found.
+In the 'RTVAD-ml-test/data' directory, there are other subdirectories. In 'weights', the 'model_res18_2.pth' pre-trained weights file is located; in 'calib', the 'calib.txt' video camera calibration file is located; and in 'final_frames', 'final_video' and 'results_for_bev', the output video, output frames and output files for generating a Bird's Eye view (without tracks), can be found.
 
-To choose the type of tracker, just assign the tracker name to the 'tracker' variable in 'RTVAD/src/faster.py'. 'SORT' is set by default.
+To choose the type of tracker, just assign the tracker name to the 'tracker' variable in 'RTVAD-ml-test/src/faster.py'. 'SORT' is set by default.
 
 ## Running the code
 

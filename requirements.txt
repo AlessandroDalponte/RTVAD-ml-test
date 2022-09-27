@@ -1,0 +1,16 @@
+opencv-python
+Cython
+numba
+progress
+matplotlib
+easydict
+scipy
+pycocotools
+fire
+scikit-image
+tensorboardX
+numpy
+pandas
+motmetrics
+setuptools
+ipyfilechooser

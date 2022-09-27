@@ -1,0 +1,6 @@
+# ninja log v5
+0	5236	1661801229873224099	/home/pc02/Documents/code/teste-ml-alessandro/RTM3D/src/lib/models/networks/DCNv2/build/temp.linux-x86_64-3.6/home/pc02/Documents/code/teste-ml-alessandro/RTM3D/src/lib/models/networks/DCNv2/src/cpu/dcn_v2_cpu.o	ff398c29916c079a
+0	17416	1661801242056024332	/home/pc02/Documents/code/teste-ml-alessandro/RTM3D/src/lib/models/networks/DCNv2/build/temp.linux-x86_64-3.6/home/pc02/Documents/code/teste-ml-alessandro/RTM3D/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_psroi_pooling_cuda.o	27699a4162c85295
+0	17416	1661801242052024704	/home/pc02/Documents/code/teste-ml-alessandro/RTM3D/src/lib/models/networks/DCNv2/build/temp.linux-x86_64-3.6/home/pc02/Documents/code/teste-ml-alessandro/RTM3D/src/lib/models/networks/DCNv2/src/cuda/dcn_v2_im2col_cuda.o	7c443677391c529d
+0	23691	1661801248323455496	/home/pc02/Documents/code/teste-ml-alessandro/RTM3D/src/lib/models/networks/DCNv2/build/temp.linux-x86_64-3.6/home/pc02/Documents/code/teste-ml-alessandro/RTM3D/src/lib/models/networks/DCNv2/src/vision.o	2952ec4619066bfd
+3	3730	1661805689338074198	/home/pc02/Documents/code/teste-ml-alessandro/RTM3D/src/lib/models/networks/DCNv2/build/temp.linux-x86_64-3.6/home/pc02/Documents/code/teste-ml-alessandro/RTM3D/src/lib/models/networks/DCNv2/src/cpu/dcn_v2_cpu.o	ff398c29916c079a

@@ -71,7 +71,7 @@ To choose the type of tracker, just assign the tracker name to the 'tracker' var
 
 Go to 'RTVAD' folder (make sure the correct environment is active):
      
-     python ./src/faster.py --demo ./demo_kitti_format/data/kitti/image --calib_dir ./data/calib/ --load_model ./data/weights/model_res18_2.pth --gpus 0 --arch res_18
+     python ./src/faster.py --calib_dir ./data/calib/ --load_model ./data/weights/model_res18_2.pth --gpus 0 --arch res_18
 
 ## Final considerations
 

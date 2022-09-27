@@ -4,7 +4,7 @@ The purpose of this project is to merge, adapt and improve both KM3D detection (
 
 ## Description of test
 
-- A video file is openned in frames, as arrays, which are then processed by the KM3D detector;
+- A video file is opened in frames, as arrays, which are then processed by the KM3D detector;
 - 2D and 3D bounding boxes are added to the detected objects in each frame;
 - The 2D bounding boxes are used as inputs by the tracker;
 - An output video file is generated, containing the bounding boxes and tracks;
@@ -59,11 +59,11 @@ Go to directory 'RTVAD-ml-test/src/lib/utils/iou3d' and compile iou3d:
     
     python setup.py install
 
-## Before running code
+## Before running the code
 
 The video file path is 'RTVAD-ml-test/data/video/video.mp4'. In case you want to change the video file, go to the mentioned directory and name the desired video as 'video.mp4'. You can also change the code in 'RTVAD-ml-test/src/faster.py' to read the desired file as you wish.
 
-There are some important subdirectories located in the 'RTVAD-ml-test/data' directory. The 'weights' directory contains the 'model_res18_2.pth' pre-trained weights; the 'calib' directory contains the 'calib.txt' video camera calibration file; and in the 'final_frames', 'final_video' and 'results_for_bev' directories, the output video, output frames and output files for generating a Bird's Eye view (without tracks), can be found, after running the code.
+There are some important subdirectories located in the 'RTVAD-ml-test/data' directory. The 'weights' directory contains the 'model_res18_2.pth' pre-trained weights; the 'calib' directory contains the 'calib.txt' video camera calibration file; and the 'final_frames', 'final_video' and 'results_for_bev' directories, receive the output video, output frames and output files for generating a Bird's Eye view (without tracks) representation, respectively.
 
 To choose the type of tracker, just assign the tracker name to the 'tracker' variable in 'RTVAD-ml-test/src/faster.py'. 'SORT' is set by default.
 
@@ -75,6 +75,7 @@ Go to 'RTVAD' folder (make sure the correct environment is active):
 
 ## Final considerations
 
-- The weights used in this test were not trained for the specific case in which they are in use;
+- The weights used in this test were not trained for this specific case;
 - The video camera calibration file for this test needs adjustments;
-- The 'SORT' uses IOU as part of its tracking system; so in this test, because of the two considerations made above, the 2D bounding box of the main vehicle is not stable between the initial frames, and it causes the tracker to change the vehicle's ID. In this case, the Centroid KF tracker works best, but might not be the best option for a model with specific trained weights and a more adequate calibration camera file.
+- 'SORT' uses IOU as part of its tracking system, and because of that, along with the two considerations made above, the 2D bounding boxes might not be too stable, specially during the initial frames, which causes the tracker to lose track of some IDs. In this case, the Centroid KF tracker works best, as it does not depends on IOU, but might not be the best option in the case of a model with specific trained weights and a more adequate calibration camera file.
+- Overall, we are able to see the tracking system working in a proper manner. 

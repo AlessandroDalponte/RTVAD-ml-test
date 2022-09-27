@@ -1,6 +1,6 @@
 ## RTVAD-ml-test: Real-Time Video Anomaly Detection (machine learning test)
 
-The purpose of this project is to merge, adapt and improve both KM3D detection ([**Banconxuan/RTM3D**](https://github.com/Banconxuan/RTM3D)) and multi-object tracking ([**adipandas/multi-object-tracker**](https://github.com/adipandas/multi-object-tracker)) codes, to create a system for tracking the spacial positions of objects detected from video captures of a single monocular RGB video camera. This project is in its initial phase of conception and design, and still needs improvement.
+The purpose of this project is to merge, adapt and improve both KM3D detection ([**Banconxuan/RTM3D**](https://github.com/Banconxuan/RTM3D)) and multi-object tracking ([**adipandas/multi-object-tracker**](https://github.com/adipandas/multi-object-tracker)) codes, to create a system for tracking the spacial positions of objects detected from video captures of a single monocular RGB video camera. This project finds itself in its initial phase of conception and design, and still needs improvement.
 
 ## Description of test
 
